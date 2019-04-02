@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package package-type="International" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/Work/WebServices/Master/WS20170614/Xml/Xsd/travel-agency.xsd">
+	<package-name>Singapore</package-name>
+	<days>35</days>
+	<places>
+		<place visit="Mandatory">Disney Park</place>
+	</places>
+	<amount>353</amount>
+	<terms-and-conditions>Becareful</terms-and-conditions>
+</package>

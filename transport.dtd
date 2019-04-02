@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT transport-agency (registered-transport-service-no, registered-transport-service-name, parcels, routes)>
+<!ELEMENT registered-transport-service-no (#PCDATA)>
+<!ELEMENT registered-transport-service-name (#PCDATA)>
+<!ELEMENT parcels (parcel+)>
+<!ELEMENT parcel (receiver, source, destination, weight, charge)>
+<!ELEMENT receiver (#PCDATA)>
+<!ELEMENT source (#PCDATA)>
+<!ELEMENT destination (#PCDATA)>
+<!ELEMENT weight (#PCDATA)>
+<!ELEMENT charge (#PCDATA)>
+<!ELEMENT routes (route+)>
+<!ELEMENT route (vehicle-no, drivers,quantity)>
+<!ELEMENT vehicle-no (#PCDATA)>
+<!ELEMENT drivers (driver+)>
+<!ELEMENT driver (driver-name, contact-no)>
+<!ELEMENT driver-name (#PCDATA)>
+<!ELEMENT contact-no (#PCDATA)>
+<!ELEMENT quantity (#PCDATA)>
+<!ATTLIST driver driver-type (regular|contractor) "regular">
+<!ATTLIST parcel delivery-type CDATA #REQUIRED>
+<!ATTLIST parcel awb-no ID #REQUIRED>
+<!ATTLIST route route-no ID #REQUIRED>
+<!ATTLIST parcel delivery-route-no IDREF #REQUIRED>
+<!ATTLIST receiver surname NMTOKEN #IMPLIED>
+

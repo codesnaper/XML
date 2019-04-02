@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://kaleswari.com/partner/ticket" xmlns:kt="http://kaleswari.com/partner/ticket">
+	<xs:element name="kaleswari-ticket" type="kt:kaleswari-ticket-type"/>
+  <xs:complexType name="kaleswari-ticket-type">
+	  <xs:sequence>
+		  <xs:element name="ref-no" type="xs:string"/>
+			<xs:element name="bus-no" type="xs:string"/>
+			<xs:element name="side" type="xs:string"/>
+			<xs:element name="seat-no" type="xs:int"/>
+	  </xs:sequence>
+  </xs:complexType>
+	
+</xs:schema>

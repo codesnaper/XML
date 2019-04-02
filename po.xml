@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE purchaseOrder SYSTEM "D:\Work\WebServices\Master\WS20170614\Xml\po.dtd">
+<purchaseOrder>
+	<orderItems>
+		<item>
+			<itemCode>ic1001</itemCode>
+			<quantity>35</quantity>
+		</item>
+		<item>
+			<itemCode>ic2001</itemCode>
+			<quantity>32</quantity>
+		</item>
+	</orderItems>
+	<shippingAddress>
+		<addressLine1>505, 5th floor</addressLine1>
+		<addressLine2>Mithrivanam</addressLine2>
+		<city>Hyderabad</city>
+		<state>TS</state>
+		<zip>3535</zip>
+		<country>India</country>
+	</shippingAddress>
+</purchaseOrder>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://apollo.com/appointments/info" xmlns:ai="http://apollo.com/appointments/info" xmlns:pi="http://apollo.com/patients/info">
+
+	<xs:import namespace="http://apollo.com/patients/info" schemaLocation="patient.xsd"/>
+	
+	<xs:element name="appointments" type="ai:appointmentsType"/>
+	<xs:complexType name="appointmentsType">
+		<xs:sequence>
+			<xs:element name="appointment" type="ai:appointmentType" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="appointmentType">
+		<xs:sequence>
+			<xs:element name="appointment-no" type="xs:int"/>
+			<xs:element name="appointment-dt" type="xs:date"/>
+			<xs:element name="doctor-name" type="xs:string"/>
+			<xs:element ref="pi:patient"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

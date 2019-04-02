@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book SYSTEM "D:\Work\WebServices\Master\WS20170614\Xml\book.dtd">
+<book>
+	<isbn>isbn200</isbn>
+	<title>let us c</title>
+	<author>
+		<author-nm>yaswanth</author-nm>
+		<date-of-birth>1990-01-01</date-of-birth>
+	</author>
+	<publisher>
+		<publisher-nm>wrox</publisher-nm>
+		<est-dt>2001-01-01</est-dt>
+	</publisher>
+</book>

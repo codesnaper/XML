@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="purchaseOrder" type="purchaseOrderType"/>
+	<xs:complexType name="purchaseOrderType">
+		<xs:sequence>
+			<xs:element name="orderItems" type="orderItemsType"/>
+			<xs:element name="shippingAddress" type="usShippingAddressType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="orderItemsType">
+		<xs:sequence>
+			<xs:element name="item" type="itemType" minOccurs="1" maxOccurs="unbounded"/>
+			
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="itemType">
+		<xs:sequence>
+			<xs:element name="itemCode" type="xs:string"/>
+			<xs:element name="quantity" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="shippingAddressType">
+		<xs:sequence>
+			<xs:element name="addressLine1" type="xs:string"/>
+			<xs:element name="addressLine2" type="xs:string"/>
+			<xs:element name="city" type="xs:string"/>
+			<xs:element name="state" type="xs:string"/>
+			<xs:element name="zip" type="zipType"/>
+			<xs:element name="country" type="countryType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="usShippingAddressType">
+		<xs:complexContent>
+			<xs:extension base="shippingAddressType">
+				<xs:sequence>
+					<xs:element name="county" type="xs:int"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	
+	<xs:simpleType name="zipType">
+		<xs:restriction base="xs:int">
+			<xs:totalDigits value="5"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="countryType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="India"/>
+			<xs:enumeration value="US"/>
+		</xs:restriction>	
+	</xs:simpleType>
+</xs:schema>
+
+
+
+
+

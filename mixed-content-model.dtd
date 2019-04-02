@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT tour-plan (package-name, travel-date, details)>
+<!ELEMENT package-name (#PCDATA)>
+<!ELEMENT travel-date (#PCDATA)>
+<!ELEMENT details (#PCDATA | place | terms-conditions)*>
+<!ELEMENT place (place-name, days)>
+<!ELEMENT place-name (#PCDATA)>
+<!ELEMENT days (#PCDATA)>
+<!ELEMENT terms-conditions (#PCDATA)>

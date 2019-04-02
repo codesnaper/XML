@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="account-info" type="account-info-type"/>
+	<xs:group name="basic-account-group">
+		<xs:sequence>
+			<xs:element name="acc-no" type="xs:string"/>
+			<xs:element name="opened-dt" type="xs:date"/>
+			<xs:element name="balance" type="xs:float"/>
+
+		</xs:sequence>
+	</xs:group>
+	<xs:complexType name="account-info-type">
+		<xs:choice>			
+			<xs:element name="savings-account" type="savings-account-type"/>
+			<xs:element name="corporate-account" type="corporate-account-type"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="savings-account-type">	
+		<xs:sequence>
+			<xs:group ref="basic-account-group"/>
+			<xs:element name="acc-hol-name" type="xs:string"/>
+			<xs:element name="is-joint-account" type="xs:boolean"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="corporate-account-type">
+		<xs:sequence>
+			<xs:group ref="basic-account-group"/>
+			<xs:element name="registered-company-name" type="xs:string"/>
+			<xs:element name="over-draft-limit" type="xs:float"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+</xs:schema>

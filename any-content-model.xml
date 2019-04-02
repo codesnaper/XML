@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mail SYSTEM "D:\Work\WebServices\Master\WS20170614\Xml\any-content-model.dtd">
+<mail>
+	<toAddress>sriman@gmail.com</toAddress>
+	<fromAddress>norepy@stackspace.org</fromAddress>
+	<subject>Web Services</subject>
+	<body>
+		<subject>Regd Web Services</subject>
+		Web Services course content
+		
+		
+	</body>
+</mail>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT purchaseOrder (orderItems, shippingAddress)>
+<!ELEMENT orderItems (item+)>
+<!ELEMENT item (itemCode, quantity)>
+<!ELEMENT itemCode (#PCDATA)>
+<!ELEMENT quantity (#PCDATA)>
+<!ELEMENT shippingAddress (addressLine1, addressLine2, city, state, zip, country)>
+<!ELEMENT addressLine1 (#PCDATA)>
+<!ELEMENT addressLine2 (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT zip (#PCDATA)>
+<!ELEMENT country (#PCDATA)>

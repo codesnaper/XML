@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appointments xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://apollo.com/appointments/info file:///D:/Work/WebServices/Master/WS20170614/Xml/Xsd/Namespaces/appointments.xsd" xmlns="http://apollo.com/appointments/info" xmlns:pi="http://apollo.com/patients/info">
+	<appointment>
+		<appointment-no>3</appointment-no>
+		<appointment-dt>2017-01-01</appointment-dt>
+		<doctor-name></doctor-name>
+		<pi:patient>
+			<pi:patient-name></pi:patient-name>
+			<pi:contact-no></pi:contact-no>
+		</pi:patient>
+	</appointment>
+</appointments>

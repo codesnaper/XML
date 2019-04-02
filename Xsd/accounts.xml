@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<account-info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/Work/WebServices/Master/WS20170614/Xml/Xsd/accounts.xsd">	
+	<corporate-account>
+		<acc-no/>
+		<opened-dt>2017-01-01</opened-dt>
+		<balance>3534</balance>
+		<registered-company-name/>
+		<over-draft-limit>0</over-draft-limit>
+	</corporate-account>
+</account-info>

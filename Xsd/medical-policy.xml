@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<medical-policies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/Work/WebServices/Master/WS20170614/Xml/Xsd/medical-policy.xsd">
+	<medical-policy>
+		<policy-no>p303</policy-no>
+		<member-name>Adam</member-name>
+		<plan-name type="Medicare">Advanced Medical Converage</plan-name>
+		<amount>9879</amount>
+	</medical-policy>
+</medical-policies>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<purchaseOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ebay.in/products/sales file:///D:/Work/WebServices/Master/WS20170614/Xml/Xsd/Namespaces/po.xsd" xmlns="http://ebay.in/products/sales">
+	<orderItems>
+		<item>
+			<itemCode>ic03</itemCode>
+			<quantity>35</quantity>
+		</item>
+	</orderItems>
+	<shippingAddress>
+		<addressLine1>505</addressLine1>
+		<addressLine2>5th floor</addressLine2>
+		<city>hyderabad</city>
+		<state>TS</state>
+		<zip>2535</zip>
+		<country>India</country>
+	</shippingAddress>
+</purchaseOrder>
+
+
+
+

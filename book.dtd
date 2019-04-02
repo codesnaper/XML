@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT book (isbn, title, author, publisher)>
+<!ELEMENT isbn (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (author-nm, date-of-birth)>
+<!ELEMENT author-nm (#PCDATA)>
+<!ELEMENT date-of-birth (#PCDATA)>
+<!ELEMENT publisher (publisher-nm, est-dt)>
+<!ELEMENT publisher-nm (#PCDATA)>
+<!ELEMENT est-dt (#PCDATA)>

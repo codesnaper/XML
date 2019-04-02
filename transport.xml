@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE super-market SYSTEM "D:\Work\WebServices\Master\WS20170614\Xml\super-market.dtd">
+<super-market>
+	<basket>
+		<veg>
+			<veg-name>cabage</veg-name>
+			<weight>1</weight>
+		</veg>
+		
+		<fruit>
+			<fruit-name>apple</fruit-name>
+			<units>1</units>
+		</fruit>
+						<fruit>
+			<fruit-name>apple</fruit-name>
+			<units>1</units>
+		</fruit>
+
+
+		<veg>
+			<veg-name>cabage</veg-name>
+			<weight>1</weight>
+		</veg>
+	</basket>
+	<payment-info>
+		<card>
+			<card-no>2422535353</card-no>
+			<card-holder-name>john</card-holder-name>
+		</card>	
+	</payment-info>
+</super-market>

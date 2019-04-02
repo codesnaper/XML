@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="day-seltment" type="day-setlement-type"/>
+	<xs:complexType name="day-setlement-type">
+		<xs:choice minOccurs="1" maxOccurs="unbounded">
+			<xs:element name="fuel" type="fuelType"/>
+			<xs:element name="consumable" type="consumableType"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="fuelType">
+		<xs:sequence>
+			<xs:element name="fuel-type" type="xs:string" nillable="false" minOccurs="0"/>
+			<xs:element name="units" type="xs:int"/>
+			<xs:element name="amount" type="xs:float"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="consumableType">
+		<xs:sequence>
+			<xs:element name="product-name" type="xs:string"/>
+			<xs:element name="units" type="xs:int"/>
+			<xs:element name="amount" type="xs:float"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

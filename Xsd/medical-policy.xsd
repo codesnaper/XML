@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="medical-policies" type="medical-policies-type"/>
+	
+	<xs:complexType name="medical-policies-type">
+		<xs:sequence>
+			<xs:element name="medical-policy" type="medical-policy-type" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="medical-policy-type">
+		<xs:sequence>
+			<xs:element name="policy-no" type="xs:string"/>
+			<xs:element name="member-name" type="xs:string"/>
+			<xs:element name="plan-name" type="planNameAttrType"/>
+			<xs:element name="amount" type="amountType"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="planNameAttrType">
+		<xs:simpleContent>
+			<xs:extension base="planNameEnum">
+				<xs:attribute name="type" type="typeEnum" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:simpleType name="typeEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Medicare"/>
+			<xs:enumeration value="Medicaid"/>
+		</xs:restriction>	
+	</xs:simpleType>
+	<xs:simpleType name="planNameEnum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Basic Coverage"/>
+			<xs:enumeration value="Medium Converage"/>
+			<xs:enumeration value="Advanced Medical Converage"/>
+		</xs:restriction>	
+	</xs:simpleType>
+	
+	<xs:simpleType name="amountType">
+		<xs:restriction base="xs:float">
+			<xs:minInclusive value="1"/>
+		</xs:restriction>	
+	</xs:simpleType>
+</xs:schema>

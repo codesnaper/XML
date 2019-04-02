@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tour-plan SYSTEM "D:\Work\WebServices\Master\WS20170614\Xml\mixed-content-model.dtd">
+<tour-plan>
+	<package-name>Kasi Yatra</package-name>
+	<travel-date>01/01/2017</travel-date>
+	<details>
+		Come with wife and kids
+		<place>
+			<place-name>Kasi</place-name>
+			<days>Lifetime</days>
+		</place>
+		<terms-conditions>Will not be returned back</terms-conditions>
+	</details>
+</tour-plan>

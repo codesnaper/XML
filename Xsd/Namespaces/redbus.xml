@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<redbus-ticket xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://redbus.in/ticket/info file:///D:/Work/WebServices/Master/WS20170614/Xml/Xsd/Namespaces/redbus-ticket.xsd http://kesineni.com/partner/ticket file:///D:/Work/WebServices/Master/WS20170614/Xml/Xsd/Namespaces/kesineni-ticket.xsd" xmlns="http://redbus.in/ticket/info" xmlns:kpt="http://kesineni.com/partner/ticket">
+	<ticket-no>9494</ticket-no>
+	<source>hyd</source>
+	<destination>blr</destination>
+	<journey-dt>2018-01-17</journey-dt>
+	<ticket-details>
+		<kpt:kesineni-ticket>
+			<kpt:kp-ref-no>35</kpt:kp-ref-no>
+			<kpt:service-no>353</kpt:service-no>
+			<kpt:seat-no>12</kpt:seat-no>
+		</kpt:kesineni-ticket>
+	</ticket-details>
+</redbus-ticket>
+
+

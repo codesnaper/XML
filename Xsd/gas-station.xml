@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<day-seltment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/Work/WebServices/Master/WS20170614/Xml/Xsd/gas-station.xsd">
+	<fuel>
+		<fuel-type>Petrol</fuel-type>
+		<units>1</units>
+		<amount>76</amount>
+	</fuel>
+	<fuel>
+		<fuel-type>Petrol</fuel-type>
+		<units>1</units>
+		<amount>76</amount>
+	</fuel>
+	<consumable>
+		<product-name>Coke</product-name>
+		<units>1</units>
+		<amount>60</amount>
+	</consumable>
+	<fuel>		
+		<units>1</units>
+		<amount>76</amount>
+	</fuel>
+</day-seltment>

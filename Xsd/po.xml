@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<purchaseOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/Work/WebServices/Master/WS20170614/Xml/Xsd/po.xsd">
+	<orderItems>
+		<item>
+			<itemCode>ic1001</itemCode>
+			<quantity>12</quantity>
+		</item>
+		<item>
+			<itemCode>ic2001</itemCode>
+			<quantity>32</quantity>
+		</item>
+	</orderItems>
+	<shippingAddress>
+		<addressLine1>505, 5th floor</addressLine1>
+		<addressLine2>Mithrivanam</addressLine2>
+		<city>Hyderabad</city>
+		<state>TS</state>
+		<zip>35351</zip>
+		<country>US</country>
+		<county>25</county>
+	</shippingAddress>
+</purchaseOrder>
