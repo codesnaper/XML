@@ -161,7 +161,9 @@ When we create element and complex type and if elementFormname is qualified then
 ```
 - [Example of Target Namespace](Xsd\Namespaces\po.xsd)
 - [Example of Target Namespace where we have the bus ticket from xml and have 2 implementation and then redbus is using one of them](Xsd\Namespaces\redbus-ticket.xsd)
-	- [Implementation of bus 1 ](Xsd\Namespaces\kesineni-ticket.xsd)
-	- [Implementation of bus 2 ](Xsd\Namespaces\kaleswari-ticket.xsd)
+	- [XSD of bus 1 ](Xsd\Namespaces\kesineni-ticket.xsd)
+	- [XSD of bus 2 ](Xsd\Namespaces\kaleswari-ticket.xsd)
 # Import and Include
-- 
+- When we have 2 xsd and they both have same targetnamespace then we use **include** else **import**.
+-	[Example of patient.xsd with one namespace](Xsd\Namespaces\patient.xsd)
+-	[Example of appointment.xsd which import the patient one beacuse of differenct namespace](Xsd\Namespaces\appointments.xsd)
