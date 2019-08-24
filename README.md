@@ -147,20 +147,6 @@ XML must be validate through DTD or XSD.
 	
 # XSD TArgetNameSpace
 	When we create element and complex type and if elementFormname is qualified then we have to bind element with the namespace. To declare a namespace in XSD we need to use targetNameSpace attribute at the Schema level followed by targetnamespace. 
-	
-	```
-		<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:eps="http://ebay.in/products/sales" targetNamespace="http://ebay.in/products/sales" elementFormDefault="qualified">
-			<xs:element name="purchaseOrder" type="eps:purchaseOrderType"/>
-				<xs:complexType name="purchaseOrderType">
-					<xs:sequence>
-						<xs:element name="orderItems" type="eps:orderItemsType"/>
-						<xs:element name="shippingAddress" type="eps:shippingAddressType"/>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
-		</xs:schema>
-	```
-	
 	- [Example of Target Namespace](Xsd\Namespaces\po.xsd)
 	- [Example of Target Namespace where we have the bus ticket from xml and have 2 implementation and then redbus is using one of them](Xsd\Namespaces\redbus-ticket.xsd)
 		- [Implementation of bus 1 ](Xsd\Namespaces\kesineni-ticket.xsd)
