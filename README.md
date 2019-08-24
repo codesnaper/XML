@@ -75,7 +75,7 @@ XML must be validate through DTD or XSD.
 	
 # XSD
 - XSD document is used for defining the structure of an XML document; it declares elements and the type of data that elements carry.
-- XSD is also XML document. So it follow all XML wellformess rule.
+- XSD is also XML document. So it follow all [XML wellformess rule](#xml-wellformess).
 - Synthax for writing simple element: 
 	```<xs:element name=”elementname” type=”datatype”/> ```
 - Synthax for writing coumpound element:
