@@ -146,7 +146,7 @@ XML must be validate through DTD or XSD.
 	- [Example of comple type and simple type extending](Xsd/medical-policy.xsd)
 	
 # XSD TArgetNameSpace
-When we create element and complex type and if elementFormname is qualified then we have to bind element with the namespace. To declare a namespace in XSD we need to use targetNameSpace attribute at the Schema level followed by targetnamespace
+	- When we create element and complex type and if elementFormname is qualified then we have to bind element with the namespace. To declare a namespace in XSD we need to use targetNameSpace attribute at the Schema level followed by targetnamespace
 	```
 		<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:eps="http://ebay.in/products/sales" targetNamespace="http://ebay.in/products/sales" elementFormDefault="qualified">
 			<xs:element name="purchaseOrder" type="eps:purchaseOrderType"/>
