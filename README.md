@@ -145,11 +145,11 @@ XML must be validate through DTD or XSD.
 	- [Example of comple type extending](Xsd/travel-agency.xsd)
 	- [Example of comple type and simple type extending](Xsd/medical-policy.xsd)
 	
-# XSD TArgetNameSpace
-	When we create element and complex type and if elementFormname is qualified then we have to bind element with the namespace. To declare a namespace in XSD we need to use targetNameSpace attribute at the Schema level followed by targetnamespace. 
-	- [Example of Target Namespace](Xsd\Namespaces\po.xsd)
-	- [Example of Target Namespace where we have the bus ticket from xml and have 2 implementation and then redbus is using one of them](Xsd\Namespaces\redbus-ticket.xsd)
-		- [Implementation of bus 1 ](Xsd\Namespaces\kesineni-ticket.xsd)
-		- [Implementation of bus 2 ](Xsd\Namespaces\kaleswari-ticket.xsd)
+# XSD TArgetNameSpace:
+When we create element and complex type and if elementFormname is qualified then we have to bind element with the namespace. To declare a namespace in XSD we need to use targetNameSpace attribute at the Schema level followed by targetnamespace. 
+- [Example of Target Namespace](Xsd\Namespaces\po.xsd)
+- [Example of Target Namespace where we have the bus ticket from xml and have 2 implementation and then redbus is using one of them](Xsd\Namespaces\redbus-ticket.xsd)
+	- [Implementation of bus 1 ](Xsd\Namespaces\kesineni-ticket.xsd)
+	- [Implementation of bus 2 ](Xsd\Namespaces\kaleswari-ticket.xsd)
 # Import and Include
 - 
