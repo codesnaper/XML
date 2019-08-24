@@ -101,4 +101,47 @@ XML must be validate through DTD or XSD.
 	```
 	[EXAMPLE OF xs:sequence](Xsd/book.xsd)
 - #### xs:all
+	We write xs:all to indicate that all element must be there but not in same oder.
+	```
+	<xs:element name=”person” type=”personType”/>
+		<xs:complexType name=”personType”>
+			<xs:all>
+				 <xs:element name=”name” type=”xs:string”/>
+				 <xs:element name="age" type=”xs:int”/>
+			</xs:all>
+	</xs:complexType> 
+	```
+- #### Imposing restriction on simple Type:
+	```
+		<xs:simpleType name="phoneType">
+			<xs:restriction base=”xs:int”>
+				<xs:totalDigits value=”10”/>
+			</xs:restriction>
+		</xs:simpleType> 
+	```
+- #### xs:choice:
+	If we want user to have choice in writing element.
+	```
+		<xs:choice>			
+			<xs:element name="savings-account" type="savings-account-type"/>
+			<xs:element name="corporate-account" type="corporate-account-type"/>
+		</xs:choice>
+	```
+	- [Example of xs:choice](Xsd/accounts.xsd)
+	- [Example of xs:choice where user have to write at least one using minoccur and maxocuur attribute](Xsd/gas-station.xsd)
+- #### Extending the complex type:
+	We can declare own type and we can also extend our type by mean of inheritance
+	```
+		<xs:complexType name=”USShippingAddressType”>
+			<xs:complexContent>
+				<xs:extension base=”shippingAddressType”>
+					<xs:sequence>
+						<xs:element name=”county” type=”xs:int”/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	```
+	- [Example of comple type extending](Xsd/travel-agency.xsd)
+	- [Example of comple type and simple type extending](Xsd/medical-policy.xsd)
 	
