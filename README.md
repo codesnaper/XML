@@ -67,7 +67,7 @@ XML must be validate through DTD or XSD.
 	- Presence of attribute is mandatory: ```<!ATTLIST elementname attributename #REQUIRED> ```
 	- If attribute is not mandatory and not required value : ```<!ATTLIST elementname attributename #IMPLIED> ``` 
 	- [Example of attribute DTD ](transport.dtd)
-	- [Attribute DTD Example] (shipping.dtd)
+	- [Attribute DTD Example ](shipping.dtd)
 - Drawbacks
 	1. We dont have type of value. We only have #PCData i.e parsable character data.
 	
