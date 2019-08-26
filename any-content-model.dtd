@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!ELEMENT mail (toAddress, fromAddress, subject, body)>
-<!ELEMENT toAddress (#PCDATA)>
-<!ELEMENT fromAddress (#PCDATA)>
-<!ELEMENT subject (#PCDATA)>
-<!ELEMENT body ANY>
